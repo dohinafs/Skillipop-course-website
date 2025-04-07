@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Skillipop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">Skillipop</span>
+                </a>
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="login.html" class="btn btn-outline">Login</a></li>
+                    <li><a href="register.html" class="btn btn-primary">Register</a></li>
+                    <li id="profile-link" style="display:none;"><a href="dashboard.html">Profile</a></li>
+                    <li id="logout-link" style="display:none;"><a href="#" onclick="logout()">Logout</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </div>
+
+    <main class="container">
+        <section class="hero">
+            <div class="container">
+                <h1>Enhance Your Skills</h1>
+                <p>Skillipop provides interactive courses to help you master essential soft skills and positively influence society. Start your learning journey today!</p>
+                <div class="hero-buttons">
+                    <a href="courses.html" class="btn btn-primary">Browse Courses</a>
+                    <a href="register.html" class="btn btn-outline">Join Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Popular Courses</h2>
+                </div>
+
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1587&q=80" alt="Effective Communication Skills">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Communication</span>
+                            <h3 class="course-title">Effective Communication Skills</h3>
+                            <div class="course-meta">
+                                <div class="course-instructor">
+                                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe">
+                                    <span>John Doe</span>
+                                </div>
+                                <div class="course-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                            <div class="course-footer">
+                                <span class="course-duration"><i class="far fa-clock"></i> 10 hrs</span>
+                                <span class="course-price free">Free</span>
+                            </div>
+                        </div>
+                        <a href="course-details.html">View Details</a>
+
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=1412&q=80" alt="Public Speaking Mastery">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Communication</span>
+                            <h3 class="course-title">Public Speaking Mastery</h3>
+                            <div class="course-meta">
+                                <div class="course-instructor">
+                                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe">
+                                    <span>John Doe</span>
+                                </div>
+                                <div class="course-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                            <div class="course-footer">
+                                <span class="course-duration"><i class="far fa-clock"></i> 15 hrs</span>
+                                <span class="course-price">$49.99</span>
+                            </div>
+                        </div>
+                        <a href="course-details.html">View Details</a>
+
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Time Management for Professionals">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Productivity</span>
+                            <h3 class="course-title">Time Management for Professionals</h3>
+                            <div class="course-meta">
+                                <div class="course-instructor">
+                                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe">
+                                    <span>John Doe</span>
+                                </div>
+                                <div class="course-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.2</span>
+                                </div>
+                            </div>
+                            <div class="course-footer">
+                                <span class="course-duration"><i class="far fa-clock"></i> 8 hrs</span>
+                                <span class="course-price free">Free</span>
+                            </div>
+                        </div>
+                        <a href="course-details.html">View Details</a>
+
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Leadership and Team Building">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Leadership</span>
+                            <h3 class="course-title">Leadership and Team Building</h3>
+                            <div class="course-meta">
+                                <div class="course-instructor">
+                                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe">
+                                    <span>John Doe</span>
+                                </div>
+                                <div class="course-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7</span>
+                                </div>
+                            </div>
+                            <div class="course-footer">
+                                <span class="course-duration"><i class="far fa-clock"></i> 20 hrs</span>
+                                <span class="course-price">$79.99</span>
+                            </div>
+                        </div>
+                        <a href="course-details.html">View Details</a>
+
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 40px;">
+                    <a href="courses.html" class="btn btn-primary">View All Courses</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background-color: var(--dark-light);">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Categories</h2>
+                </div>
+
+                <div class="categories-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px;">
+                    <a href="courses.html?category=Communication" class="category-card" style="background-color: rgba(108, 92, 231, 0.1); padding: 20px; border-radius: var(--border-radius); text-align: center; transition: var(--transition);">
+                        <div style="font-size: 2rem; margin-bottom: 10px;"></div>
+                        <h3 style="font-size: 1rem;">Communication</h3>
+                    </a>
+                    <a href="courses.html?category=Productivity" class="category-card" style="background-color: rgba(108, 92, 231, 0.1); padding: 20px; border-radius: var(--border-radius); text-align: center; transition: var(--transition);">
+                        <div style="font-size: 2rem; margin-bottom: 10px;"></div>
+                        <h3 style="font-size: 1rem;">Productivity</h3>
+                    </a>
+                    <a href="courses.html?category=Leadership" class="category-card" style="background-color: rgba(108, 92, 231, 0.1); padding: 20px; border-radius: var(--border-radius); text-align: center; transition: var(--transition);">
+                        <div style="font-size: 2rem; margin-bottom: 10px;"></div>
+                        <h3 style="font-size: 1rem;">Leadership</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Skillipop</h3>
+                    <p>Making skills as simple as eating lollipops. Enhance your skills with our interactive courses.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="courses.html?category=Communication">Communication</a></li>
+                        <li><a href="courses.html?category=Productivity">Productivity</a></li>
+                        <li><a href="courses.html?category=Leadership">Leadership</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on new courses and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Skillipop. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

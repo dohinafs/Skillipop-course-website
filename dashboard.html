@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Skillipop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">Skillipop</span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li class="user-menu">
+                        <a href="#">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Profile" class="profile-pic">
+                            <span>User</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown">
+                            <li><a href="dashboard.html"><i class="fas fa-user"></i> Profile</a></li>
+                            <li><a href="index.html?logout=1"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="dashboard">
+            <div class="dashboard-sidebar">
+                <h3>My Dashboard</h3>
+                <ul class="dashboard-menu">
+                    <li><a href="dashboard.html" class="active"><i class="fas fa-home"></i> Overview</a></li>
+                    <li><a href="dashboard.html?page=courses"><i class="fas fa-book"></i> Courses</a></li>
+                    <li><a href="dashboard.html?page=profile"><i class="fas fa-user"></i> Profile</a></li>
+                    <li><a href="dashboard.html?page=settings"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a href="index.html?logout=1"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </div>
+
+            <div class="dashboard-content">
+                <h2>Welcome back!</h2>
+
+                <div class="dashboard-card">
+                    <h3>My Courses</h3>
+                    <div class="enrolled-courses">
+                        <div class="enrolled-course">
+                            <div class="enrolled-course-header">
+                                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1587&q=80" alt="Effective Communication Skills">
+                                <div class="enrolled-course-info">
+                                    <h4>Effective Communication Skills</h4>
+                                    <p>Enrolled on Jun 10, 2023</p>
+                                </div>
+                            </div>
+                            <div class="enrolled-course-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%;"></div>
+                                </div>
+                                <div class="progress-text">
+                                    <span>Progress</span>
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                            <div class="enrolled-course-actions">
+                                <a href="course-details.html?id=1" class="btn btn-outline btn-sm">View Course</a>
+                                <a href="dashboard.html?course=1" class="btn btn-primary btn-sm">Continue</a>
+                            </div>
+                        </div>
+
+                        <div class="enrolled-course">
+                            <div class="enrolled-course-header">
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Time Management for Professionals">
+                                <div class="enrolled-course-info">
+                                    <h4>Time Management for Professionals</h4>
+                                    <p>Enrolled on Jun 12, 2023</p>
+                                </div>
+                            </div>
+                            <div class="enrolled-course-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 100%;"></div>
+                                </div>
+                                <div class="progress-text">
+                                    <span>Progress</span>
+                                    <span>100%</span>
+                                </div>
+                            </div>
+                            <div class="enrolled-course-actions">
+                                <a href="course-details.html?id=3" class="btn btn-outline btn-sm">View Course</a>
+                                <a href="dashboard.html?course=3" class="btn btn-primary btn-sm">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Recommended Courses</h3>
+                    <div class="courses-grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+                        <div class="course-card">
+                            <div class="course-thumbnail">
+                                <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=1412&q=80" alt="Public Speaking Mastery">
+                            </div>
+                            <div class="course-content">
+                                <span class="course-category">Communication</span>
+                                <h3 class="course-title">Public Speaking Mastery</h3>
+                                <div class="course-footer">
+                                    <span class="course-duration"><i class="far fa-clock"></i> 15 hrs</span>
+                                    <span class="course-price">$49.99</span>
+                                </div>
+                            </div>
+                            <a href="course-details.html?id=2" class="course-link"></a>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-thumbnail">
+                                <img src="https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Leadership and Team Building">
+                            </div>
+                            <div class="course-content">
+                                <span class="course-category">Leadership</span>
+                                <h3 class="course-title">Leadership and Team Building</h3>
+                                <div class="course-footer">
+                                    <span class="course-duration"><i class="far fa-clock"></i> 20 hrs</span>
+                                    <span class="course-price">$79.99</span>
+                                </div>
+                            </div>
+                            <a href="course-details.html?id=4" class="course-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Skillipop</h3>
+                    <p>Making skills as simple as eating lollipops. Enhance your skills with our interactive courses.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="courses.html?category=Communication">Communication</a></li>
+                        <li><a href="courses.html?category=Productivity">Productivity</a></li>
+                        <li><a href="courses.html?category=Leadership">Leadership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on new courses and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Skillipop. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

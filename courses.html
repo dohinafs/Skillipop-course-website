@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | Skillipop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>  
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">Skillipop</span>
+                </a>
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="login.html" class="btn btn-outline">Login</a></li>
+                    <li><a href="register.html" class="btn btn-primary">Register</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </div>
+
+    <main class="container">
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>All Courses</h2>
+                </div>
+
+                <div class="course-filters" style="margin-bottom: 30px; background-color: var(--dark-light); padding: 20px; border-radius: var(--border-radius);">
+                    <form id="filterForm" class="filter-form" style="display: grid; grid-template-columns: 1fr 1fr 1fr auto; gap: 15px; align-items: end;">
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select id="category" name="category" class="form-control">
+                                <option value="">All Categories</option>
+                                <option value="Communication">Communication</option>
+                                <option value="Productivity">Productivity</option>
+                                <option value="Leadership">Leadership</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="difficulty">Difficulty</label>
+                            <select id="difficulty" name="difficulty" class="form-control">
+                                <option value="">All Levels</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="search">Search</label>
+                            <input type="text" id="search" name="search" class="form-control" placeholder="Search courses...">
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" style="height: 42px;">Filter</button>
+                            <a href="courses.html" class="btn btn-outline" style="height: 42px; margin-left: 10px;">Reset</a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="courses-grid">
+                    <div class="course-card" data-category="Communication" data-difficulty="beginner" data-title="Effective Communication Skills">
+                        <div class="course-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1587&q=80" alt="Effective Communication Skills">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Communication</span>
+                            <h3 class="course-title">Effective Communication Skills</h3>
+                            <div class="course-meta">
+                                <div class="course-instructor">
+                                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe">
+                                    <span>John Doe</span>
+                                </div>
+                                <div class="course-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                            <div class="course-footer">
+                                <span class="course-duration"><i class="far fa-clock"></i> 10 hrs</span>
+                                <span class="course-price free">Free</span>
+                            </div>
+                        </div>
+                        <a href="course-details.html">View Details</a>
+                    </div>
+
+                    <div class="course-card" data-category="Communication" data-difficulty="intermediate" data-title="Public Speaking Mastery">
+                        <div class="course-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=1412&q=80" alt="Public Speaking Mastery">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Communication</span>
+                            <h3 class="course-title">Public Speaking Mastery</h3>
+                            <div class="course-meta">
+                                <div class="course-instructor">
+                                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe">
+                                    <span>John Doe</span>
+                                </div>
+                                <div class="course-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                            <div class="course-footer">
+                                <span class="course-duration"><i class="far fa-clock"></i> 15 hrs</span>
+                                <span class="course-price">$49.99</span>
+                            </div>
+                        </div>
+                        <a href="course-details.html">View Details</a>
+                    </div>
+
+                    <div class="course-card" data-category="Productivity" data-difficulty="beginner" data-title="Time Management for Professionals">
+                        <div class="course-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Time Management for Professionals">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Productivity</span>
+                            <h3 class="course-title">Time Management for Professionals</h3>
+                            <div class="course-meta">
+                                <div class="course-instructor">
+                                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe">
+                                    <span>John Doe</span>
+                                </div>
+                                <div class="course-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.2</span>
+                                </div>
+                            </div>
+                            <div class="course-footer">
+                                <span class="course-duration"><i class="far fa-clock"></i> 8 hrs</span>
+                                <span class="course-price free">Free</span>
+                            </div>
+                        </div>
+                        <a href="course-details.html">View Details</a>
+                    </div>
+
+                    <div class="course-card" data-category="Leadership" data-difficulty="advanced" data-title="Leadership and Team Building">
+                        <div class="course-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1590402494682-cd3fb53b1f70?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Leadership and Team Building">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-category">Leadership</span>
+                            <h3 class="course-title">Leadership and Team Building</h3>
+                            <div class="course-meta">
+                                <div class="course-instructor">
+                                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe">
+                                    <span>John Doe</span>
+                                </div>
+                                <div class="course-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7</span>
+                                </div>
+                            </div>
+                            <div class="course-footer">
+                                <span class="course-duration"><i class="far fa-clock"></i> 20 hrs</span>
+                                <span class="course-price">$79.99</span>
+                            </div>
+                        </div>
+                        <a href="course-details.html">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Skillipop</h3>
+                    <p>Making skills as simple as eating lollipops. Enhance your skills with our interactive courses.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="courses.html?category=Communication">Communication</a></li>
+                        <li><a href="courses.html?category=Productivity">Productivity</a></li>
+                        <li><a href="courses.html?category=Leadership">Leadership</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on new courses and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Skillipop. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const filterForm = document.getElementById('filterForm');
+            if (filterForm) {
+                filterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    filterCourses();
+                });
+
+                // Also filter when search input changes (optional)
+                const searchInput = document.getElementById('search');
+                if (searchInput) {
+                    searchInput.addEventListener('input', function() {
+                        filterCourses();
+                    });
+                }
+            }
+
+            function filterCourses() {
+                const category = document.getElementById('category').value.toLowerCase();
+                const difficulty = document.getElementById('difficulty').value.toLowerCase();
+                const searchText = document.getElementById('search').value.toLowerCase();
+                
+                const courseCards = document.querySelectorAll('.course-card');
+                
+                courseCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category').toLowerCase();
+                    const cardDifficulty = card.getAttribute('data-difficulty').toLowerCase();
+                    const cardTitle = card.getAttribute('data-title').toLowerCase();
+                    
+                    const categoryMatch = !category || cardCategory === category.toLowerCase();
+                    const difficultyMatch = !difficulty || cardDifficulty === difficulty.toLowerCase();
+                    const searchMatch = !searchText || cardTitle.includes(searchText) || 
+                                      cardCategory.includes(searchText);
+                    
+                    if (categoryMatch && difficultyMatch && searchMatch) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            }
+
+            function checkUrlParameters() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const categoryParam = urlParams.get('category');
+                const difficultyParam = urlParams.get('difficulty');
+                const searchParam = urlParams.get('search');
+                
+                if (categoryParam) {
+                    document.getElementById('category').value = categoryParam;
+                }
+                if (difficultyParam) {
+                    document.getElementById('difficulty').value = difficultyParam;
+                }
+                if (searchParam) {
+                    document.getElementById('search').value = searchParam;
+                }
+                
+                if (categoryParam || difficultyParam || searchParam) {
+                    filterCourses();
+                }
+            }
+            
+            checkUrlParameters();
+        });
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
