@@ -27,7 +27,7 @@ Welcome to **Skillipop** – a sleek, dark-themed course website designed to del
 
 ⚙️ **JavaScript** – Enables interactivity and dynamic elements across the site.  
 
-🗃️ **SQL ** – Planned for backend integration to manage user data and course information.  
+🗃️ **SQL** – Planned for backend integration to manage user data and course information.  
 
 🧩 **PHP** – Reserved for server-side scripting and form processing.
 
